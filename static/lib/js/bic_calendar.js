@@ -29,6 +29,16 @@ $.fn.bic_calendar = function(options) {
         var textMonthCurrentLayer = $('<div class="visualmonth"></div>');
         var textYearCurrentLayer = $('<div class="visualyear"></div>');
 
+        $(textYearCurrentLayer).click(function() {
+            var _year = prompt('Enter Gatakali');
+            if (isNaN(parseInt(_year))) {
+                alert('Invalid Gatakali');
+            } else {
+                year = parseInt(_year);
+                changeDate(year);
+            }
+        })
+
         var calendarId = "bic_calendar";
 
         var events = opts.events;
