@@ -1,13 +1,3 @@
-/*
- *
- * bic calendar
- * Autor: bichotll
- * Web-autor: bic.cat
- * Web script: http://bichotll.github.io/bic_calendar/
- * Llicència Apache
- *
- */
-
 $.fn.bic_calendar = function(options) {
 
     var opts = $.extend({}, $.fn.bic_calendar.defaults, options);
@@ -16,11 +6,6 @@ $.fn.bic_calendar = function(options) {
 
     this.each(function() {
 
-
-        /*** vars ***/
-
-
-        //element called
         var elem = $(this);
 
         var calendar;
@@ -85,17 +70,7 @@ $.fn.bic_calendar = function(options) {
         var lastDaySelected = '';
         var daySelected = '';
 
-        /*** --vars-- ***/
-
-
-
-
-
-        /*** functions ***/
-
-        /**
-         * init n print calendar
-         */
+        
         function showCalendar() {
 
             //layer with the days of the month (literals)
