@@ -106,7 +106,7 @@ $.fn.bic_calendar = function(options) {
             objFecha.setMonth(0);
 
             //current year
-            var year = objFecha.getFullYear() + 3100;
+            year = objFecha.getFullYear() + 3100;
 
             //show the days of the month n year configured
             showMonths(year);
